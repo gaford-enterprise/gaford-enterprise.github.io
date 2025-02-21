@@ -1,0 +1,121 @@
+#webmail_main_section{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+}
+
+#webmail_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#web_nav_img{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#webmail_form_contents{
+    width: 20%;
+    margin: 8rem 0rem;
+}
+
+.webmail_inputs{
+    margin: 2rem 0rem;
+}
+
+.webmail_inputs span{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0rem;
+    border: 2px solid silver;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.webmail_inputs span input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+#webmail_form_contents button{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #179bd7;
+    color: white;
+    padding: 0.5rem 0.1rem;
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#webmail_form_contents button:hover{
+    background-color: #006898;
+}
+
+#webmail_main_section footer{
+    text-align: center;
+    font-size: 0.6rem;
+    color: grey;
+}
+
+#webmail_main_section footer img{
+    width: 25px;
+    margin: 0.5rem 0rem;
+}
+
+#webmail_main_section footer a:hover{
+    color: red;
+}
+
+/*  */
+@media (max-width:1030px) {
+    #webmail_form_contents{
+        width: 30%;
+        margin: 5rem 0rem;
+    }
+}
+
+@media (max-width:900px) {
+    #webmail_form_contents{
+        width: 35%;
+    }
+}
+
+@media (max-width:650px) {
+    #webmail_form_contents{
+        width: 50%;
+    }
+}
+
+@media (max-width:500px) {
+    #web_nav_img{
+        width: 70%;
+    }
+
+    #webmail_form_contents{
+        width: 70%;
+    }
+}
+
+@media (max-width:400px) {
+    #web_nav_img{
+        width: 60%;
+    }
+
+    #webmail_form_contents{
+        width: 85%;
+    }
+}
+
+@media (max-width:360px) {
+    #webmail_form_contents{
+        width: 90%;
+    }
+}

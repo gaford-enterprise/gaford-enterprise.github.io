@@ -1,0 +1,277 @@
+#qq_main_container{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+#qq_main_container nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #eff4fa;
+    color: #1d5494;
+    padding: 1rem 2rem;
+}
+
+#qq_main_container nav ul img{
+    width: 150px;
+}
+
+#qq_main_container nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+#qq_main_container nav ul li a{
+    padding: 0rem 0.5rem;
+    font-size: smaller;
+}
+
+#qq_main_container nav ul li a:not(:last-child){
+    border: 1px solid #1d5494;
+    border-width: 0px 1px 0px 0px;
+}
+
+#qq_form_contents{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 10rem;
+    min-height: 70vh;
+}
+
+#qq_side_bar{
+    width: 50%;
+    position: relative;
+}
+
+#qq_side_bar span{
+    position: absolute;
+}
+
+#qq_side_bar span h1{
+    color: #6f95c8;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 15px 0px;
+}
+
+#qq_side_bar span p{
+    margin: 0.4rem 0rem;
+    font-size: smaller;
+}
+
+#qq_side_bar img{
+    width: 100%;
+}
+
+
+#qq_form{
+    width: 30%;
+    min-height: 70vh;
+    box-shadow: 0px 0px 3px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#qq_form ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eff4fa;
+    padding: 1rem 0.2rem;
+    margin-bottom: 2rem;
+}
+
+#qq_form ul li{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#qq_form aside{
+    padding: 1rem 2rem;
+}
+
+.qq_inputs{
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    margin: 0.5rem 0rem;
+    border: 2px solid silver;
+    border-radius: 2px;
+}
+
+.qq_inputs:focus{
+    border-color: #1d5494 !important;
+}
+
+#qq_form aside button{
+    display: block;
+    width: 100%;
+    background-color: rgba(29, 84, 148, 0.8);
+    color: white;
+    padding: 0.5rem 0.2rem;
+    font-size: large;
+    font-weight: 500;
+    margin: 1rem 0rem;
+    border-radius: 5px;
+}
+
+#qq_form aside button:hover{
+    background-color: rgba(29, 84, 148, 0.9);
+}
+
+#qq_mid_container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin: 4rem 0rem;
+    font-size: smaller;
+}
+
+#qq_form_foot{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 0rem;
+    font-size: smaller;
+}
+
+#qq_form_foot img{
+    width: 15px;
+    cursor: pointer;
+}
+
+
+#qq_main_container footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff4fa;
+    color: #1d5494;
+    padding: 1rem 0.5rem;
+    font-size: smaller;
+}
+
+#qq_main_container footer ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#qq_main_container footer ul li:first-child a{
+    padding: 0px 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#qq_main_container footer ul li:first-child a:not(:last-child){
+    border: 1px solid grey;
+    border-width: 0px 1px 0px 0px;
+}
+
+#qq_main_container footer ul li:first-child span{
+    color: black;
+}
+
+#qq_main_container footer ul li:last-child{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: grey;
+}
+
+/*  */
+
+@media (max-width:1030px) {
+    #qq_form_contents{
+        padding: 2rem 3rem;
+    }
+
+    #qq_form{
+        width: 45%;
+        min-height: 35vh;
+    }
+}
+
+@media (max-width:900px) {
+    #qq_form_contents{
+        gap: 0.5rem;
+        padding: 2rem 1rem;
+    }
+
+    #qq_form{
+        width: 50%;
+        min-height: 40vh;
+    }
+
+    #qq_form aside{
+        padding: 1rem;
+    }
+
+    #qq_main_container footer ul li{
+        gap: 0rem;
+    }
+}
+
+@media (max-width:650px) {
+    #qq_form_contents{
+        gap: 0.5rem;
+        padding: 2rem 0.5rem;
+    }
+
+    #qq_side_bar{
+        width: 0%;
+        display: none;
+    }
+    
+    #qq_form{
+        width: 70%;
+        min-height: 40vh;
+    }
+
+    #qq_form aside{
+        padding: 1rem 2rem;
+    }
+
+    #qq_main_container footer{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    #qq_main_container nav ul li{
+        display: none;
+    }
+
+    #qq_form{
+        width: 80%;
+    }
+}
+
+@media (max-width:400px){
+    #qq_form{
+        width: 100%;
+    }
+
+    #qq_form aside{
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width:360px){
+    #qq_form aside{
+        padding: 1rem 0.5rem;
+    }
+}

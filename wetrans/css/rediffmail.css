@@ -1,0 +1,131 @@
+#rediff_main_section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+#upbar_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#downbar_img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#rediff_nav img{
+    margin: 1rem;
+}
+
+#rediff_form_container{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+}
+
+#rediff_form{
+    min-width: 30%;
+    /* box-shadow: 0px 0px 3px; */
+    z-index: 5;
+    background-color: white;
+}
+
+#rediff_form h3{
+    text-align: center;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.rediff_inputs{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 1rem 0rem;
+}
+
+.rediff_inputs input, .rediff_inputs span{
+    width: 100%;
+}
+
+.rediff_inputs input{
+    background-color: whitesmoke;
+    border: none;
+    padding: 0.5rem 0.4rem;
+    border: 1px solid silver;
+    border-width: 0px 0px 1px 0px;
+}
+
+.rediff_inputs input:focus{
+    border-color: black;
+}
+
+.rediff_inputs span{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#rediff_mid_form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+    margin: 1rem 0rem;
+    gap: 1.5rem;
+}
+
+#rediff_mid_form div{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+#rediff_mid_form div a{
+    color: blue;
+    font-weight: bold;
+}
+
+#rediff_form button{
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    background-color: #c7f8fd;
+    font-size: larger;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-weight: bold;
+}
+
+#rediff_form_foot{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#rediff_form_foot p{
+    margin: 0.2rem 0rem;
+    font-size: smaller;
+    color: grey;
+}
+
+#rediff_form_foot span{
+    display: inline-block;
+    margin: 1rem 0rem;
+}
+
+/*  */
+
+@media (max-width:500px) {
+    .rediff_inputs, .rediff_inputs span{
+        font-size: smaller;
+    }
+
+    #upbar_img{
+        display: none;
+    }
+}

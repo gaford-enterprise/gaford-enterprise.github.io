@@ -1,0 +1,178 @@
+#boss_mail_container{
+    background-color: white;
+    min-height: 100vh;
+    font-size: smaller;
+}
+
+#boss_mail_container a, #boss_mail_container select{
+    color: #186d92;
+}
+
+#boss_mail_container nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+
+#boss_mail_container nav ul li select{
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+#boss_mail_container nav ul li select:not(:last-child){
+    border: 1px solid silver;
+    border-width: 0px 1px 0px 0px;
+}
+
+#bossmail_form_section{
+    background-image: url(../pages/bossmail/side_bar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+}
+
+#bossmail_form_section form{
+    box-shadow: 0px 0px 3px;
+    width: 25%;
+    min-height: 60vh;
+    border-radius: 5px;
+    padding: 1.2rem 2rem;
+    background-color: white;
+    position: relative;
+}
+
+.boss_mail_inputs{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid silver;
+    padding: 0.5rem 0.3rem;
+    margin: 2rem 0rem;
+    border-radius: 3px;
+}
+
+.boss_mail_inputs input{
+    width: 100%;
+    border: none;
+}
+
+#bossmail_form_section button{
+    display: block;
+    width: 100%;
+    background-color: rgba(223, 112, 0, 0.9);
+    color: white;
+    padding: 0.7rem 0.1rem;
+    text-align: center;
+    font-size: large;
+    border-radius: 5px;
+}
+
+#bossmail_form_section button:hover{
+    background-color: rgba(223, 112, 0, 1);
+}
+
+#boss_form_mid_link{
+    display: block;
+    margin: 0.5rem 0rem;
+}
+
+#boss_form_foot_link{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#boss_mail_container footer{
+    text-align: center;
+}
+
+/*  */
+@media (max-width:1030px) {
+
+    #bossmail_form_section{
+        min-height: 60vh;
+    }
+    
+    #bossmail_form_section form{
+        width: 45%;
+        min-height: 30vh;
+    }
+}
+
+@media (max-width:900px) {
+    #bossmail_form_section form{
+        width: 50%;
+    }
+}
+
+@media (max-width:800px) {
+
+    #bossmail_form_section{
+        min-height: 70vh;
+    }
+    
+    #bossmail_form_section form{
+        width: 55%;
+        min-height: 36vh;
+    }
+}
+
+
+@media (max-width:650px) {
+    #bossmail_form_section{
+        min-height: 50vh;
+    }
+
+    #bossmail_form_section form{
+        width: 65%;
+        min-height: 36vh;
+    }
+}
+
+@media (max-width:500px) {
+    #boss_mail_container nav ul li select{
+        margin: 0rem 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    #bossmail_form_section form{
+        width: 90%;
+        min-height: 45vh;
+        padding: 1.2rem 1rem;
+    }
+
+    #boss_mail_container footer{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:400px) {
+    #boss_mail_container nav ul{
+        justify-content: left;
+        margin-left: 0.8rem;
+    }
+
+    #boss_mail_container nav ul li {
+        display: none;
+    }
+
+    #bossmail_form_section form{
+        width: 95%;
+    }
+}
+
+@media (max-width:360px) {
+
+    #bossmail_form_section form{
+        width: 100%;
+        min-height: 50vh;
+    }
+}

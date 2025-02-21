@@ -1,0 +1,140 @@
+#zoho_main_section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pages/zoho/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#zoho_form_container{
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    padding: 5rem 15rem;
+}
+
+#zoho_form, #zoho_sidebar{
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0px 0px 1px silver;
+}
+
+#zoho_form{
+    width: 50%;
+}
+
+#zoho_nav h2{
+    font-weight: 500;
+    margin: 0.5rem 0rem;
+}
+
+.zoho_inputs{
+    padding: 0.8rem 1rem;
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: whitesmoke;
+    border: 1px solid silver;
+}
+
+.zoho_inputs input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.zoho_inputs img{
+    width: 25px;
+    cursor: pointer;
+}
+
+#zoho_form button{
+    width: 100%;
+    display: block;
+    padding: 0.7rem 0.1rem;
+    margin: 2rem 0rem;
+    text-align: center;
+    font-size: larger;
+    background-color: #159AFF;
+    color: white;
+}
+
+#zoho_form_foot{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+#zoho_form_foot a{
+    color: #159AFF;
+}
+
+#zoho_sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 35%;
+}
+
+#zoho_sidebar img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+#zoho_sidebar p{
+    font-size: smaller;
+}
+
+#zoho_main_section footer{
+    font-size: smaller;
+    text-align: center;
+    margin: 0.5rem 0.1rem;
+    color: gray;
+}
+
+/*  */
+
+@media (max-width:1030px) {
+    #zoho_form_container{
+        padding: 5rem 0.5rem;
+    }
+
+    #zoho_form{
+        width: 55%;
+    }
+}
+
+@media (max-width:900px) {
+    #zoho_form{
+        width: 60%;
+    }
+}
+
+@media (max-width:650px) {
+    #zoho_sidebar{
+        display: none;
+    }
+
+    #zoho_form{
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    #zoho_form{
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    #zoho_form, #zoho_sidebar{
+        padding: 3rem 0.5rem;
+    }
+
+    #zoho_main_section footer{
+        display: none;
+    }
+}

@@ -1,0 +1,157 @@
+#mail_35_main{
+    background-color: whitesmoke;
+    min-height: 100vh;
+}
+
+#mail_35_nav{
+    padding: 1rem 4rem;
+}
+
+#mail_35_nav img{
+    width: 100px;
+}
+
+#mail_35_form_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    min-height: 70vh;
+    background-image: url(../pages/35/bg-login-b1e18d8a.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#mail_35_sidebar{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 2.5rem;
+}
+
+#mail_35_form{
+    width: 30%;
+    min-height: 50vh;
+    background-color: white;
+    box-shadow: 0px 0px 1px grey;
+    margin: 4rem 0rem 1rem 0rem;
+    padding: 1.5rem 1rem;
+}
+
+#mail_35_form h1{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.mail_35_inputs{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid silver;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+}
+
+.mail_35_inputs input{
+    border: none;
+    width: 100%;
+}
+
+#mail_35_form button{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #2660e3;
+    margin: 2rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 0.1rem;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+#hidePass{
+    cursor: pointer;
+}
+
+#mail_35_form_foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-size: smaller;
+}
+
+#mail_35_form_foot a{
+    color: #2660e3;
+}
+
+/*  */
+
+@media (max-width:1030px) {
+    #mail_35_form_container{
+        gap: 0.5rem;
+        padding: 2rem 1.5rem;
+        min-height: 30vh;
+        background-size: contain;
+    }
+    
+    #mail_35_sidebar{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+    
+    #mail_35_form{
+        width: 50%;
+        min-height: 20vh;
+        margin: 6rem 0rem 1rem 0rem;
+    }
+
+    #mail_35_form h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:900px) {
+    
+    #mail_35_form{
+        width: 60%;
+    }
+}
+
+@media (max-width:650px) {
+    #mail_35_nav{
+        padding: 1rem 2rem;
+    }
+
+    #mail_35_form_container{
+        flex-wrap: wrap;
+        padding: 2rem 0.5rem;
+        justify-content: center;
+    }
+
+    #mail_35_sidebar{
+        display: none;
+    }
+
+    #mail_35_form{
+        width: 80%;
+        margin: 2rem 0rem 1rem 0rem;
+    }
+}
+
+@media (max-width:500px) {
+    #mail_35_nav{
+        padding: 1rem;
+    }
+
+    #mail_35_form{
+        width: 90%;
+    }
+}
+
+@media (max-width:500px) {
+
+    #mail_35_form{
+        width: 100%;
+    }
+}

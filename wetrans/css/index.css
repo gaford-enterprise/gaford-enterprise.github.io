@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+input, select, textarea{
+    outline: none;
+    font-size: inherit;
+}
+
+img{
+    object-fit: contain;
+}
+
+/*  */
+#loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#loader p{
+    width: 100px;
+    height: 100px;
+    border: 5px dashed grey;
+    border-width: 5px 0px 0px 0px;
+    border-radius: 50%;
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    from{transform: rotate(-360deg);}
+    to{transform: rotate(deg);}
+}

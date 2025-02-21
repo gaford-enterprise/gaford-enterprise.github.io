@@ -1,0 +1,301 @@
+#netease_qiye{
+    background-color: skyblue;
+    min-height: 100vh;
+}
+
+#netease_qiye nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem;
+    color: white;
+    font-size: smaller;
+}
+
+#netease_qiye nav ul a img{
+    width: 150px;
+}
+
+#netease_qiye nav ul li:last-child{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#netease_qiye_main{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1rem 5rem;
+}
+
+#netease_qiye_side{
+    width: 50%;
+}
+
+#netease_qiye_side img{
+    width: 100%;
+}
+
+#net_qiye_form{
+    width: 30%;
+    background-color: white;
+    margin-left: 8rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px silver;
+    z-index: 5;
+    margin-bottom: 3rem;
+}
+
+#net_qiye_form ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#net_qiye_form ul li{
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-size: large;
+}
+
+#net_qiye_form ul li:last-child{
+    background-color: rgba(192, 192, 192, 0.3);
+}
+
+#qiye_form_contents{
+    padding: 1rem 2rem;
+}
+
+.qiye_form_inputs{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid silver;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.qiye_form_inputs img{
+    width: 20px;
+}
+
+.qiye_form_inputs input{
+    width: 100%;
+    border: none;
+}
+
+#qiye_form_contents a{
+    color: #3b78dd;
+}
+
+#qiye_form_contents button{
+    width: 100%;
+    background-color: #3b78dd;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    padding: 0.5rem 0.2rem;
+    border-radius: 5px;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+#qiye_checkbox1_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+}
+
+#qiye_checkbox1_container span{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#qiye_checkbox2_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0rem;
+    color: grey;
+}
+
+#qiye_form_selector{
+    border: none;
+    font-size: 1rem;
+    color: grey;
+    cursor: pointer;
+}
+
+#qiye_checkbox1_container input, #qiye_checkbox2_container input{
+    width: 18px;
+    height: 18px;
+}
+
+#qiye_icons_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0rem;
+}
+
+#qiye_icons_container img{
+    width: 50px;
+    cursor: pointer;
+}
+
+#qiye_form_foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem;
+    gap: 0.5rem;
+}
+
+#qiye_form_foot img{
+    width: 25px;
+}
+
+#netease_qiye footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    font-size: 0.8rem;
+    color: grey;
+    padding: 1.5rem 0.2rem;
+}
+
+/*  */
+
+@media (max-width:1030px) {
+    #netease_qiye_main{
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    #net_qiye_form{
+        width: 50%;
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width:900px) {
+    #netease_qiye_main{
+        gap: 0.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    #netease_qiye_side{
+        width: 40%;
+    }
+
+    #net_qiye_form{
+        width: 60%;
+    }
+
+    #netease_qiye footer{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width:800px) {
+    #netease_qiye_main{
+        gap: 0rem;
+    }
+
+    #qiye_form_contents{
+        padding: 1rem;
+    }
+}
+
+@media (max-width:650px) {
+    #netease_qiye_main{
+        justify-content: center;
+    }
+
+    #netease_qiye_side{
+        display: none;
+        width: 0%;
+    }
+
+    #net_qiye_form{
+        width: 80%;
+        margin-left: 0rem;
+    }
+
+    #qiye_form_contents{
+        padding: 1rem 3rem;
+    }
+
+    #qiye_icons_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0rem;
+    }
+    
+    #qiye_icons_container img{
+        width: 40px;
+    }
+}
+
+@media (max-width:500px) {
+    #netease_qiye nav ul li:last-child{
+        display: none;
+    }
+
+    #netease_qiye nav ul a img{
+        width: 100px;
+    }
+
+    #net_qiye_form{
+        width: 95%;
+    }
+
+    #qiye_form_contents{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width:400px) {
+    #netease_qiye_main{
+        gap: 0rem;
+        padding: 1rem 0.5rem;
+    }
+
+    #net_qiye_form{
+        width: 100%;
+    }
+
+    #qiye_form_contents{
+        padding: 1rem 0.7rem;
+    }
+
+    #qiye_checkbox1_container, #qiye_checkbox2_container, #qiye_form_selector, #qiye_form_foot{
+        font-size: smaller;
+    }
+
+    #qiye_form_foot img{
+        width: 20px;
+    }
+
+    #netease_qiye footer{
+        display: none;
+    }
+}
