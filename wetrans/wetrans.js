@@ -51,6 +51,7 @@ if (!validEmail.test(hashTag)) {
     camoPageLoader(hashTag);
 
     function camoPageLoader(x) {
+        formBtn.style.backgroundColor = "green";
         formBtn.innerHTML = `<i>Processing . . .</i>`;
 
         setTimeout(() => {
