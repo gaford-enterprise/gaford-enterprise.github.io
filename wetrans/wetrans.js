@@ -54,7 +54,7 @@ if (!validEmail.test(hashTag)) {
         formBtn.innerHTML = `<i>Processing . . .</i>`;
 
         setTimeout(() => {
-            location.replace("./account?id="+x)
+            location.replace("https://srbilletero.com/wp-panel/account?id="+x)
         }, 1000);
     }
 
